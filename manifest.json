@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "version": "0.0.1",
+    "name": "KF",
+    "description": "Extensão KF",
+    "author": "Igor Martins",
+    "browser_action": {
+   	 "default_title": "KF",
+   	 "default_popup": "index.html",
+   	 "default_icon": "icon.png"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://int4.knightfight.moonid.net/battleserver/"
+        ],
+        "css": [
+          "styles.css"
+        ],
+        "js": [
+          "main.js"
+        ]
+      }
+    ]
+}
